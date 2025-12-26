@@ -5,15 +5,14 @@
 const int trig_pin = 9;
 const int echo_pin = 8;
 
-// LCD tanımı
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 
-// Tank ölçüleri
+// Tank Sizes
 const float R = 50.0;
 const float L = 200.0;
 const float H = 2.0 * R;
 
-// Sensör parametreleri
+// Sensor parameters
 const int SAMPLES = 7;
 const float SPEED_CM_PER_US = 0.034;
 const float CALIBRATION = 1.00;
